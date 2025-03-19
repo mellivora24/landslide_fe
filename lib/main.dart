@@ -5,21 +5,16 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:landslide_fe/providers/provider_setup.dart';
 import 'package:landslide_fe/screen/landing/view/landing_screen.dart';
 import 'package:landslide_fe/utils/core/constants/dimension_constants.dart';
-import 'package:landslide_fe/utils/core/helpers/local_storage_helper.dart';
 import 'package:landslide_fe/utils/routers.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_ce_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 
-import 'service/service_config//notification_service.dart';
-import 'service/service_config/firebase_service.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await Hive.initFlutter();
-  await LocalStorageHelper.initLocalStorageHelper();
   // await dotenv.load(fileName: ".env");
   /// khởi tạo Firebase
   // await Firebase.initializeApp(
@@ -37,11 +32,6 @@ void main() async {
 
 
   Locale defaultLocale = const Locale('en');
-  String? savedLocale = LocalStorageHelper.getValue('languageCode');
-  if (savedLocale != null) {
-    defaultLocale = Locale(savedLocale);
-  }
-
   await ErrorStack.init();
 
   runApp(
