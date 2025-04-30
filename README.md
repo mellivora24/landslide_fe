@@ -1,7 +1,3 @@
-Dưới đây là bản dịch tiếng Việt với văn phong chuyên nghiệp và mang tính học thuật hơn cho tài liệu README của dự án **Landslide Warning IoT App**:
-
----
-
 # Ứng dụng IoT Giám sát và Cảnh báo Sạt lở Đất
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.22.2-blue?logo=flutter) ![Dart](https://img.shields.io/badge/Dart-3.4.3-blue?logo=dart) ![License](https://img.shields.io/badge/License-MIT-green)
