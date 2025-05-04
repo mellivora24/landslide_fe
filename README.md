@@ -3,6 +3,7 @@
 ![Flutter](https://img.shields.io/badge/Flutter-3.22.2-blue?logo=flutter) ![Dart](https://img.shields.io/badge/Dart-3.4.3-blue?logo=dart) ![License](https://img.shields.io/badge/License-MIT-green)
 
 Ứng dụng di động đa nền tảng được phát triển bằng Flutter, t
+
 ích hợp hệ thống IoT nhằm giám sát sạt lở đất theo thời gian thực. Ứng dụng hiển thị các điểm khảo sát trên bản đồ Google Maps, thu thập và phân tích dữ liệu môi trường (độ ẩm, lượng mưa, góc nghiêng) từ thiết bị cảm biến, tính toán mức độ rủi ro và cung cấp cơ chế cảnh báo. Đồng thời, hệ thống hỗ trợ quản trị viên quản lý các điểm khảo sát thông qua RESTful API bảo mật.
 
 ## Tính năng chính
